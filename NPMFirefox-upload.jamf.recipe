@@ -10,26 +10,8 @@
 		<dict>
 			<key>CATEGORY</key>
 			<string>Applications</string>
-			<key>GROUP_NAME</key>
-			<string>Firefox-update-smart</string>
-			<key>GROUP_TEMPLATE</key>
-			<string>JamfSmartGroupTemplate.xml</string>
 			<key>NAME</key>
 			<string>Firefox</string>
-			<key>POLICY_CATEGORY</key>
-			<string>Testing</string>
-			<key>POLICY_NAME</key>
-			<string>Install Latest %NAME%</string>
-			<key>POLICY_TEMPLATE</key>
-			<string>JamfPolicyTemplate.xml</string>
-			<key>SELF_SERVICE_DESCRIPTION</key>
-			<string>Firefox is a web browser from Mozilla.</string>
-			<key>SELF_SERVICE_DISPLAY_NAME</key>
-			<string>Install Latest %NAME%</string>
-			<key>SELF_SERVICE_ICON</key>
-			<string>%NAME%.png</string>
-			<key>TESTING_GROUP_NAME</key>
-			<string>Testing</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == False</string>
 		</dict>
@@ -61,13 +43,7 @@
 				<key>Arguments</key>
 				<dict>
 					<key>patch_softwaretitle</key>
-					<string>Mozilla Firefox</string>
-					<key>patch_template</key>
-					<string>%PATCH_TEMPLATE%</string>
-					<key>patch_icon_policy_name</key>
-					<string>%POLICY_NAME%</string>
-					<key>replace_patch</key>
-					<string>True</string>
+					<string>%NAME%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
