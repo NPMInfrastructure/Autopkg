@@ -2,7 +2,7 @@
 <patch_policy>
   <general>
     <name>%patch_name%</name>
-    <enabled>false</enabled>
+    <enabled>true</enabled>
     <target_version>%version%</target_version>
     <distribution_method>selfservice</distribution_method>
     <allow_downgrade>false</allow_downgrade>
@@ -11,7 +11,7 @@
   <scope>
     <all_computers>false</all_computers>
     <computers/>
-    <computer_groups/>
+    <computer_groups>Nate Test Group</computer_groups>
     <users/>
     <buildings/>
     <departments/>
