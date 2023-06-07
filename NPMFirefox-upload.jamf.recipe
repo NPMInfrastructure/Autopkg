@@ -14,6 +14,8 @@
 			<string>Firefox</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == False</string>
+			<key>PATCH_TEMPLATE</key>
+			<string>PatchPolicy_Firefox.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Firefox</string>
 		</dict>
@@ -48,6 +50,8 @@
 					<string>%NAME%</string>
 					<key>patch_icon_policy_name</key>
 					<string>%POLICY_NAME%</string>
+					<key>patch_template</key>
+					<string>%PATCH_TEMPLATE%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
