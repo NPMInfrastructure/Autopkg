@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Comment</key>
-		<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+		<string>Uses parent recipe to download and rename package, then will upload to Jamf and set up patch policy.</string>
 		<key>Identifier</key>
 		<string>com.github.npm.jamf-upload.Firefox</string>
 		<key>Input</key>
