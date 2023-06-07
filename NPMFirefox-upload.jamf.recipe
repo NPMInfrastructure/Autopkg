@@ -1,54 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Description</key>
-	<string>Downloads the latest version of Firefox and makes a pkg. Then, uploads the package to the Jamf Pro Server and creates a Self Service Policy and Smart Group. Values for FIREFOX_BUILD correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/
-Some useful values are: 'latest', 'latest-10.0esr', 'latest-esr', 'latest-3.6', 'latest-beta'
-LOCALE corresponds to directories at http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/$FIREFOX_BUILD/mac/
-Examples include 'en-US', 'de', 'ja-JP-mac', 'sv-SE', and 'zh-TW'
-No idea if all Firefox builds are available in all the same localizations, so you may need to verify that any particular combination is offered.
-</string>
-	<key>Identifier</key>
-	<string>com.github.npm.upload.Firefox</string>
-	<key>Input</key>
 	<dict>
-		<key>CATEGORY</key>
-		<string>Productivity</string>
-		<key>NAME</key>
-		<string>Firefox</string>
-		<key>PATCH_ENABLED</key>
-		<string>true</string>
-		<key>PATCH_NAME</key>
-		<string>%NAME%</string>
-		<key>PATCH_SOFTWARE_TITLE</key>
-		<string>%NAME%</string>
-		<key>PATCH_TEMPLATE</key>
-		<string>PatchTemplate-selfservice.xml</string>
-		<key>POLICY_NAME</key>
-		<string>Install Latest %NAME%</string>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>2.3</string>
-	<key>ParentRecipe</key>
-	<string>com.github.grahampugh.recipes.jamf.Firefox</string>
-	<key>Process</key>
-	<array>
+		<key>Comment</key>
+		<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+		<key>Identifier</key>
+		<string>com.github.npm.jamf-upload.Firefox</string>
+		<key>Input</key>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>patch_icon_policy_name</key>
-				<string>%POLICY_NAME%</string>
-				<key>patch_name</key>
-				<string>%PATCH_NAME%</string>
-				<key>patch_softwaretitle</key>
-				<string>%PATCH_SOFTWARE_TITLE%</string>
-				<key>patch_template</key>
-				<string>%PATCH_TEMPLATE%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+			<key>CATEGORY</key>
+			<string>Applications</string>
+			<key>GROUP_NAME</key>
+			<string>Firefox-update-smart</string>
+			<key>GROUP_TEMPLATE</key>
+			<string>JamfSmartGroupTemplate.xml</string>
+			<key>NAME</key>
+			<string>Firefox</string>
+			<key>POLICY_CATEGORY</key>
+			<string>Testing</string>
+			<key>POLICY_NAME</key>
+			<string>Install Latest %NAME%</string>
+			<key>POLICY_TEMPLATE</key>
+			<string>JamfPolicyTemplate.xml</string>
+			<key>SELF_SERVICE_DESCRIPTION</key>
+			<string>Firefox is a web browser from Mozilla.</string>
+			<key>SELF_SERVICE_DISPLAY_NAME</key>
+			<string>Install Latest %NAME%</string>
+			<key>SELF_SERVICE_ICON</key>
+			<string>%NAME%.png</string>
+			<key>TESTING_GROUP_NAME</key>
+			<string>Testing</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == False</string>
 		</dict>
-	</array>
-</dict>
+		<key>MinimumVersion</key>
+		<string>2.3</string>
+		<key>ParentRecipe</key>
+		<string>com.github.autopkg.pkg.Firefox_EN</string>
+		<key>Process</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>predicate</key>
+					<string>%UPDATE_PREDICATE%</string>
+				</dict>
+				<key>Processor</key>
+				<string>StopProcessingIf</string>
+			</dict>
+		</array>
+	</dict>
 </plist>
