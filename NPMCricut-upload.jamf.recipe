@@ -18,6 +18,14 @@
 			<string>PatchPolicy_Cricut.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Cricut Design Space</string>
+			<key>POLICY_CATEGORY</key>
+			<string>Applications</string>
+			<key>POLICY_TEMPLATE</key>
+			<string>UpdatePolicy_Cricut.xml</string>
+			<key>SELF_SERVICE_ICON</key>
+			<string>%NAME%.png</string>
+			<key>SELF_SERVICE_DESCRIPTION</key>
+			<string>%version%</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
