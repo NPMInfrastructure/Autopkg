@@ -17,7 +17,7 @@
 			<key>PATCH_TEMPLATE</key>
 			<string>PatchPolicy_Cricut.xml</string>
 			<key>POLICY_NAME</key>
-			<string>Firefox</string>
+			<string>Cricut Design Space</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
