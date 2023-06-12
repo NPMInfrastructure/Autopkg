@@ -11,7 +11,11 @@
   <scope>
     <all_computers>false</all_computers>
     <computers/>
-    <computer_groups>Nate Test Group<computer_groups>
+    <computer_groups>
+       <computer_group>
+          <name>Nate Test Group</name>
+       </computer_group>
+    </computer_groups>
     <users/>
     <buildings/>
     <departments/>
