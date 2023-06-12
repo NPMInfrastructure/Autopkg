@@ -25,7 +25,7 @@
 			<key>SELF_SERVICE_ICON</key>
 			<string>%NAME%.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
-			<string>Firefox is a web browser from Mozilla.</string>
+			<string>Firefox is a web browser from Mozilla. %version%</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
