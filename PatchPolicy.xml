@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <patch_policy>
   <general>
-    <name>%patch_name%</name>
+    <name>%version%</name>
     <enabled>true</enabled>
     <target_version>%version%</target_version>
     <distribution_method>selfservice</distribution_method>
