@@ -23,7 +23,7 @@
 			<key>POLICY_TEMPLATE</key>
 			<string>UpdatePolicy_Cricut.xml</string>
 			<key>SELF_SERVICE_ICON</key>
-			<string>%NAME%.png</string>
+			<string>cricutdesignspace.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
 			<string>%version%</string>
 		</dict>
