@@ -2,7 +2,7 @@
 <policy>
     <!-- General - Name, Enabled/Disabled, Triggers, Frequency, Categories -->
     <general>
-        <name>%POLICY_NAME% Test</name>
+        <name>%POLICY_NAME%</name>
         <enabled>true</enabled>
         <frequency>Ongoing</frequency>
         <category>
