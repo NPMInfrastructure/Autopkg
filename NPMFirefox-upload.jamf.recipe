@@ -18,6 +18,8 @@
 			<string>PatchPolicy_Firefox.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Firefox</string>
+			<key>POLICY_CATEGORY</key>
+			<string>Applications</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>UpdatePolicy_Firefox.xml</string>
 			<key>SELF_SERVICE_ICON</key>
