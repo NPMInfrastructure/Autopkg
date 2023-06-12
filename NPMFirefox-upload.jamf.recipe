@@ -15,13 +15,13 @@
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == False</string>
 			<key>PATCH_TEMPLATE</key>
-			<string>PatchPolicy_Firefox.xml</string>
+			<string>PatchPolicy.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Firefox</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Applications</string>
 			<key>POLICY_TEMPLATE</key>
-			<string>UpdatePolicy_Firefox.xml</string>
+			<string>UpdatePolicy.xml</string>
 			<key>SELF_SERVICE_ICON</key>
 			<string>%NAME%.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
