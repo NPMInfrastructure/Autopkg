@@ -18,6 +18,12 @@
 			<string>PatchPolicy_Firefox.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Firefox</string>
+			<key>POLICY_TEMPLATE</key>
+			<string>UpdatePolicy_Firefox.xml</string>
+			<key>SELF_SERVICE_ICON</key>
+			<string>%NAME%.png</string>
+			<key>SELF_SERVICE_DESCRIPTION</key>
+			<string>Firefox is a web browser from Mozilla.</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
@@ -55,6 +61,21 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>icon</key>
+					<string>%SELF_SERVICE_ICON%</string>
+					<key>policy_name</key>
+					<string>%POLICY_NAME%</string>
+					<key>policy_template</key>
+					<string>%POLICY_TEMPLATE%</string>
+					<key>replace_policy</key>
+					<string>True</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 			</dict>
 		</array>
 	</dict>
