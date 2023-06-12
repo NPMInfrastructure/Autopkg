@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Comment</key>
+		<string>Uses parent recipe to download and rename package, then will upload to Jamf and set up patch policy.</string>
+		<key>Identifier</key>
+		<string>com.github.npm.jamf-upload.Cricut</string>
+		<key>Input</key>
+		<dict>
+			<key>CATEGORY</key>
+			<string>Applications</string>
+			<key>NAME</key>
+			<string>Cricut Deseign Space</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == False</string>
+			<key>PATCH_TEMPLATE</key>
+			<string>PatchPolicy_Cricut.xml</string>
+			<key>POLICY_NAME</key>
+			<string>Firefox</string>
+		</dict>
+		<key>MinimumVersion</key>
+		<string>2.3</string>
+		<key>ParentRecipe</key>
+		<string>com.github.nstrauss.pkg.CricutDesignSpace</string>
+		<key>Process</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>predicate</key>
+					<string>%UPDATE_PREDICATE%</string>
+				</dict>
+				<key>Processor</key>
+				<string>StopProcessingIf</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>patch_softwaretitle</key>
+					<string>%NAME%</string>
+					<key>patch_icon_policy_name</key>
+					<string>%POLICY_NAME%</string>
+					<key>patch_template</key>
+					<string>%PATCH_TEMPLATE%</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
+			</dict>
+		</array>
+	</dict>
+</plist>
