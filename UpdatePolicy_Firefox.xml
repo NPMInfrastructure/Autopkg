@@ -11,12 +11,7 @@
     </general>
     <!-- Scope -->
     <scope>
-        <all_computers>false</all_computers>
-        <computer_groups>
-            <computer_group>
-                <name>Nate Test Group</name>
-            </computer_group>
-        </computer_groups>
+        <all_computers>true</all_computers>
         <exclusions/>
     </scope>
     <!-- Packages -->
