@@ -62,6 +62,8 @@
 					<string>%POLICY_NAME%</string>
 					<key>patch_template</key>
 					<string>%PATCH_TEMPLATE%</string>
+					<key>replace_patch</key>
+					<string>true</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPatchUploader</string>
@@ -80,6 +82,10 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageCleaner</string>
 			</dict>
 		</array>
 	</dict>
