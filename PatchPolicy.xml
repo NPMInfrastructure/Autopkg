@@ -50,7 +50,7 @@
         </reminders>
       </notifications>
       <deadlines>
-        <deadline_enabled>false</deadline_enabled>
+        <deadline_enabled>true</deadline_enabled>
         <deadline_period>7</deadline_period>
       </deadlines>
   </user_interaction>
