@@ -57,7 +57,7 @@
 					<key>patch_softwaretitle</key>
 					<string>%NAME%</string>
 					<key>patch_name</key>
-					<string>%version%</string>
+					<string>%NAME% %version%</string>
 					<key>patch_icon_policy_name</key>
 					<string>%POLICY_NAME%</string>
 					<key>patch_template</key>
