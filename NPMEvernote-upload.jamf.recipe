@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>???</string>
+		<string>com.github.npm.jamf-upload.Evernote</string>
 		<key>Process</key>
 		<array>
 			<dict>
