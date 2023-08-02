@@ -5,7 +5,7 @@
 		<key>Comment</key>
 		<string>Uses parent recipe to download and rename package, then will upload to Jamf and set up patch policy and update Self Service policy.</string>
 		<key>Identifier</key>
-		<string>com.github.npm.jamf-upload.Firefox</string>
+		<string>com.github.npm.jamf-upload.Evernote</string>
 		<key>Input</key>
 		<dict>
 			<key>CATEGORY</key>
@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.npm.jamf-upload.Evernote</string>
+		<string>com.github.npm.download.Evernote</string>
 		<key>Process</key>
 		<array>
 			<dict>
