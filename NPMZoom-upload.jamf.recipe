@@ -15,7 +15,7 @@
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == False</string>
 			<key>PATCH_TEMPLATE</key>
-			<string>PatchPolicy.xml</string>
+			<string>PatchPolicy-Zoom.xml</string>
 			<key>POLICY_NAME</key>
 			<string>Zoom</string>
 			<key>POLICY_CATEGORY</key>
