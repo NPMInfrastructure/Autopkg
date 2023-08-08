@@ -96,7 +96,7 @@
 					<key>pkgname</key>
 					<string>%NAME%-%version%</string>
 					<key>version</key>
-					<string>%jamfversion%</string>
+					<string>%version%</string>
 				</dict>
 			</dict>
 			<key>Processor</key>
