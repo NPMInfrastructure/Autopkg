@@ -62,8 +62,10 @@
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/zoom.us.app/Contents/Info.plist</string>
 				<key>plist_keys</key>
 				<dict>
-					<key>CFBundleShortVersionString</key>
+					<key>CFBundleVersion</key>
 					<string>version</string>
+					<key>CFBundleShortVersionString</key>
+					<string>jamfversion</string>
 					<key>LSMinimumSystemVersion</key>
 					<string>min_os_version</string>
 				</dict>
@@ -96,7 +98,7 @@
 					<key>scripts</key>
 					<string>scripts</string>
 					<key>version</key>
-					<string>%version%</string>
+					<string>%jamfversion%</string>
 				</dict>
 			</dict>
 			<key>Processor</key>
