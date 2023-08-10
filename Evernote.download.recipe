@@ -23,7 +23,7 @@
 				<key>url</key>
 				<string>https://evernote.com/download/</string>
 				<key>re_pattern</key>
-				<string>\.zip.*?(https:\/\/cdn1\.evernote\.com\/boron\/mac\/builds\/Evernote-.*?-mac-.*?\.dmg)</string>
+				<string>https:\/\/cdn1\.evernote\.com\/boron\/mac\/builds\/Evernote-.*?-mac-.*?\.dmg</string>
 			</dict>
 		</dict>
         <dict>
