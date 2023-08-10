@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.npm.pkg.Evernote</string>
+		<string>com.github.autopkg.pkg.Evernote</string>
 		<key>Process</key>
 		<array>
 			<dict>
