@@ -97,6 +97,8 @@
 					<string>%NAME%-%version%</string>
 					<key>version</key>
 					<string>%version%</string>
+					<key>scripts</key>
+					<string>%RECIPE_CACHE_DIR%/downloads/Zoom.pkg/Scripts</string>
 				</dict>
 			</dict>
 			<key>Processor</key>
