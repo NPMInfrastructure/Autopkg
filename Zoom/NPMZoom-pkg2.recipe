@@ -82,7 +82,7 @@
         			<string>%RECIPE_CACHE_DIR%/$NAME-%version%</string>
 			</dict>
 			<key>Processor</key>
-			<string>FileCopier</string>
+			<string>FileMover</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
