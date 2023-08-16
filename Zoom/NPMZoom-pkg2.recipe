@@ -76,10 +76,10 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-        <key>source</key>
-        <string>%RECIPE_CACHE_DIR%/downloads/Zoom.pkg</string>
-        <key>target</key>
-        <string>%RECIPE_CACHE_DIR%/$NAME
+        			<key>source</key>
+        			<string>%RECIPE_CACHE_DIR%/downloads/Zoom.pkg</string>
+        			<key>target</key>
+        			<string>%RECIPE_CACHE_DIR%/$NAME-%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>FileCopier</string>
