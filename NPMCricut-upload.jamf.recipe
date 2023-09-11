@@ -82,6 +82,13 @@
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 			</dict>
 			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_name_match</key>
+					<string>CricutDesignSpace-</string>
+					<key>dry_run</key>
+					<string>true</string>
+				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageCleaner</string>
 			</dict>
