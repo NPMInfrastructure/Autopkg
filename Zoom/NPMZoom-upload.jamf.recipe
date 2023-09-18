@@ -39,7 +39,7 @@
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>pkg_name</key>
-					<string>%NAME%-%version$</string>
+					<string>%NAME%-%version%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
