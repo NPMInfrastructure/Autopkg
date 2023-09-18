@@ -59,7 +59,7 @@
 					<key>patch_name</key>
 					<string>%NAME% %version%</string>
 					<key>version</key>
-					<string>%jamfversion%</string>
+					<string>%version%</string>
 					<key>patch_icon_policy_name</key>
 					<string>%POLICY_NAME%</string>
 					<key>patch_template</key>
