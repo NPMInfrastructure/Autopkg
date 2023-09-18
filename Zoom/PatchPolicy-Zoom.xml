@@ -3,7 +3,7 @@
   <general>
     <name>%patch_name%</name>
     <enabled>true</enabled>
-    <target_version>%jamfversion%</target_version>
+    <target_version>%version%</target_version>
     <distribution_method>selfservice</distribution_method>
     <allow_downgrade>false</allow_downgrade>
     <patch_unknown>true</patch_unknown>
