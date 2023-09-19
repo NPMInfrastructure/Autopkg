@@ -10,7 +10,7 @@ Note: Because Zoom has released more than one installer with the same version nu
 the build number is NOT stripped. The end result will look something like:
     ZoomInstallerIT-5.5.4 (13130.0228).pkg</string>
 	<key>Identifier</key>
-	<string>com.github.jazzace.pkg.ZoomUS-ForIT</string>
+	<string>com.github.npm.pkg3.Zoom</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
