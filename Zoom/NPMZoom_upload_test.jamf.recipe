@@ -38,8 +38,6 @@
 				<dict>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
-					<key>replace_pkg</key>
-					<string>TRUE</string>
 					<key>pkg_notes</key>
 					<string>Zoom version %jamfversion%</string>
 					<key>pkg_name</key>
