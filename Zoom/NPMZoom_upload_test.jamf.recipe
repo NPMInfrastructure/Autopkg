@@ -40,8 +40,6 @@
 					<string>%CATEGORY%</string>
 					<key>pkg_notes</key>
 					<string>Zoom version %jamfversion%</string>
-					<key>pkg_display_name</key>
-					<string>Zoom %jamfversion%</string>
 					<key>replace_pkg_metadata</key>
 					<string>TRUE</string>
 				</dict>
