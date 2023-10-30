@@ -40,6 +40,8 @@
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
 					<string>TRUE</string>
+					<key>pkg_notes</key>
+					<string>Zoom version %jamfversion%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
