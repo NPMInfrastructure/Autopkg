@@ -40,8 +40,8 @@
 					<string>%CATEGORY%</string>
 					<key>pkg_notes</key>
 					<string>Zoom version %jamfversion%</string>
-					<key>pkg_name</key>
-					<string>Zoom $jamfversion%</string>
+					<key>pkg_display_name</key>
+					<string>Zoom %jamfversion%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
