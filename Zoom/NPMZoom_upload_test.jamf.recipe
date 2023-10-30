@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.smithjw.download.ZoomIT</string>
+		<string>com.github.npm.pkg2.Zoom</string>
 		<key>Process</key>
 		<array>
 			<dict>
@@ -38,6 +38,8 @@
 				<dict>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>TRUE</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
@@ -57,9 +59,9 @@
 					<key>patch_softwaretitle</key>
 					<string>%NAME%</string>
 					<key>patch_name</key>
-					<string>%NAME% %version%</string>
+					<string>%NAME% %jamfversion%</string>
 					<key>version</key>
-					<string>%version%</string>
+					<string>%jamfversion%</string>
 					<key>patch_icon_policy_name</key>
 					<string>%POLICY_NAME%</string>
 					<key>patch_template</key>
