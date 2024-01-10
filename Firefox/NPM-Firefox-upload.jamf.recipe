@@ -23,7 +23,7 @@
 			<key>POLICY_TEMPLATE</key>
 			<string>UpdatePolicy.xml</string>
 			<key>SELF_SERVICE_ICON</key>
-			<string>%NAME%.png</string>
+			<string>%NAME%/%NAME%.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
 			<string>Firefox is a web browser from Mozilla.</string>
 		</dict>
