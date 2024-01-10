@@ -23,7 +23,7 @@
 			<key>POLICY_TEMPLATE</key>
 			<string>UpdatePolicy.xml</string>
 			<key>SELF_SERVICE_ICON</key>
-			<string>cricutdesignspace.png</string>
+			<string>Cricut/cricutdesignspace.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
 			<string>Installs latest version of Cricut Design Space.</string>
 		</dict>
