@@ -23,7 +23,7 @@
 			<key>POLICY_TEMPLATE</key>
 			<string>UpdatePolicy.xml</string>
 			<key>SELF_SERVICE_ICON</key>
-			<string>googlechrome.png</string>
+			<string>Google/googlechrome.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
 			<string>Install Google Chrome.</string>
 		</dict>
