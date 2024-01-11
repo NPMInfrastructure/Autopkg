@@ -34,7 +34,8 @@
         <install_button_text>Install</install_button_text>
         <reinstall_button_text>Reinstall</reinstall_button_text>
         <self_service_display_name>%POLICY_NAME%</self_service_display_name>
-        <self_service_description>%SELF_SERVICE_DESCRIPTION% %version%</self_service_description>
+        <self_service_description>%SELF_SERVICE_DESCRIPTION% 
+Version: %version%</self_service_description>
     </self_service>
     <!-- Maintenance e.g. recon -->
     <maintenance>
