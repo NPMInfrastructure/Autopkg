@@ -47,7 +47,7 @@
       </notifications>
       <deadlines>
         <deadline_enabled>true</deadline_enabled>
-        <deadline_period>3</deadline_period>
+        <deadline_period>1</deadline_period>
       </deadlines>
   </user_interaction>
   <software_title_configuration_id>%patch_softwaretitle_id%</software_title_configuration_id>
