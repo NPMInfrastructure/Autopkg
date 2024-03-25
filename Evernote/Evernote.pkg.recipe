@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of Evernote.</string>
     <key>Identifier</key>
-    <string>com.github.autopkg.pkg.Evernote</string>
+    <string>com.github.npm.pkg.Evernote</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
