@@ -52,6 +52,17 @@
 			<key>Processor</key>
 			<string>AppDmgVersioner</string>
 		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>app_path</key>
+				<string>%pathname%/WhatsApp.app</string>
+				<key>bundleid</key>
+				<string>com.whatsapp.WhatsApp</string>
+			</dict>
+			<key>Processor</key>
+			<string>AppPkgCreator</string>
+		</dict>
 	</array>
 </dict>
 </plist>
