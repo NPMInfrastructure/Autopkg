@@ -5,7 +5,7 @@
 		<key>Comment</key>
 		<string>Uses parent recipe to download and rename package, then will upload to Jamf and set up patch policy.</string>
 		<key>Identifier</key>
-		<string>com.github.npm.jamf-upload.Cricut</string>
+		<string>com.github.npm.jamf-upload.cricutdesignspace</string>
 		<key>Input</key>
 		<dict>
 			<key>CATEGORY</key>
