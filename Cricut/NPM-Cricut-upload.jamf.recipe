@@ -108,6 +108,26 @@
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageCleaner</string>
 			</dict>
+			<dict>
+			    <key>Arguments</key>
+			    <dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/Cricut Design Space.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			    </dict>
+			    <key>Processor</key>
+			    <string>Versioner</string>
+			</dict>
+			<dict>
+			    <key>Arguments</key>
+			    <dict>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/CricutDesignSpace-%version%.pkg</string>
+			    </dict>
+			    <key>Processor</key>
+			    <string>AppPkgCreator</string>
+			</dict>
 		</array>
 	</dict>
 </plist>
