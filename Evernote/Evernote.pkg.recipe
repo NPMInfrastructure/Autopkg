@@ -3,86 +3,51 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-	<string>Downloads the latest version of Evernote and makes a pkg of it
-</string>
+    <string>Downloads the current release version of Evernote.</string>
     <key>Identifier</key>
-    <string>com.github.npm.pkg.Evernote</string>
+    <string>com.github.autopkg.download.Evernote</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Evernote</string>
-        <key>PKG_ID</key>
-        <string>com.evernote.Evernote</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
-    <key>ParentRecipe</key>
-	<string>com.github.npm.download.Evernote</string>
+    <string>0.4.0</string>
     <key>Process</key>
     <array>
         <dict>
             <key>Processor</key>
-            <string>PkgRootCreator</string>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
-                <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>pkgdirs</key>
-                <dict>
-                    <key>Applications</key>
-                    <string>0775</string>
-                </dict>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+                <key>url</key>
+                <string>https://mac.desktop.evernote.com/builds/Evernote-latest.dmg</string>
             </dict>
         </dict>
         <dict>
             <key>Processor</key>
-            <string>Unarchiver</string>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
             <key>Arguments</key>
             <dict>
-                <key>archive_path</key>
+                <key>input_path</key>
+                <string>%pathname%/Evernote.app</string>
+                <key>requirement</key>
+                <string>(anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Q79WDW8YH9) and identifier "com.evernote.Evernote"</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppDmgVersioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_path</key>
                 <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%pkgroot%/Applications/</string>
-                <key>purge_destination</key>
-                <true/>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>Versioner</string>
-            <key>Arguments</key>
-            <dict>
-                <key>input_plist_path</key>
-                <string>%pkgroot%/Applications/Evernote.app/Contents/Info.plist</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PkgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkgname</key>
-                <string>%NAME%-%version%</string>
-                <key>pkg_request</key>
-                <dict>
-                    <key>pkgdir</key>
-                    <string>%RECIPE_CACHE_DIR%</string>
-                    <key>id</key>
-                    <string>%PKG_ID%</string>
-                    <key>options</key>
-                    <string>purge_ds_store</string>
-                    <key>chown</key>
-                    <array>
-                        <dict>
-                            <key>path</key>
-                            <string>Applications</string>
-                            <key>user</key>
-                            <string>root</string>
-                            <key>group</key>
-                            <string>admin</string>
-                        </dict>
-                    </array>
-                </dict>
             </dict>
         </dict>
     </array>
