@@ -32,7 +32,7 @@ Version: </string>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.scriptingosx.pkg.WhatsApp</string>
+		<string>com.github.npm.pkg.WhatsApp</string>
 		<key>Process</key>
 		<array>
 			<dict>
