@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.killahquam.pkg.slack</string>
+		<string>com.github.npm.pkg.slack</string>
 		<key>Process</key>
 		<array>
 			<dict>
