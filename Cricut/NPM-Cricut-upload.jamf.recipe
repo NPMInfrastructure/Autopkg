@@ -30,7 +30,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.nstrauss.pkg.CricutDesignSpace</string>
+		<string>com.github.npm.pkg.cricutdesignspace</string>
 		<key>Process</key>
 		<array>
 			<dict>
