@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Obsidian.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.download.Obsidian</string>
+	<string>com.github.npm.pkg.Obsidian</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
