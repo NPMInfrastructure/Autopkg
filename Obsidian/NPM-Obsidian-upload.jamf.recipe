@@ -17,7 +17,7 @@
 			<key>PATCH_TEMPLATE</key>
 			<string>PatchPolicy.xml</string>
 			<key>POLICY_NAME</key>
-			<string>PolicyName</string>
+			<string>Obsidian</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Applications</string>
 			<key>POLICY_TEMPLATE</key>
