@@ -21,7 +21,7 @@
 			<key>POLICY_CATEGORY</key>
 			<string>Applications</string>
 			<key>POLICY_TEMPLATE</key>
-			<string>UpdatePolicy.xml</string>
+			<string>UpdatePolicyTest.xml</string>
 			<key>SELF_SERVICE_ICON</key>
 			<string>Obsidian/Obsidian.png</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
