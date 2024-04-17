@@ -1,0 +1,20 @@
+Description: Download swiftDialog, an admin utility app for macOS 11+ written in SwiftUI that displays a popup dialog, displaying the content to your users that you want to display.
+Identifier: com.github.npm.pkg.swiftDialog
+ParentRecipe: com.github.zentralpro.download.swiftDialog
+MinimumVersion: "2.3"
+
+Input:
+  NAME: swiftDialog
+
+Process:
+  - Processor: GitHubReleasesInfoProvider
+    Arguments:
+      github_repo: bartreardon/swiftDialog
+      asset_regex: .*\.pkg
+
+  - Processor: URLDownloader
+
+  - Processor: PkgCopier
+    Arguments:
+      pkg_path: "%RECIPE_CACHE_DIR%/swiftDialog-%version%.pkg"
+      source_pkg: "%pathname%"
