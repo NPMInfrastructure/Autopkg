@@ -16,3 +16,8 @@ Process:
   - Processor: URLDownloader
 
   - Processor: EndOfCheckPhase
+
+  - Processor: PkgCopier
+    Arguments:
+      pkg_path: "%RECIPE_CACHE_DIR%/%INSTALLER%-%version%.pkg"
+      source_pkg: "%pathname%"
