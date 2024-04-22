@@ -53,6 +53,9 @@
         <deadline_enabled>true</deadline_enabled>
         <deadline_period>3</deadline_period>
       </deadlines>
+      <grace_period>
+  			<grace_period_duration>60</grace_period_duration>
+  		</grace_period>
   </user_interaction>
   <software_title_configuration_id>%patch_softwaretitle_id%</software_title_configuration_id>
 </patch_policy>
