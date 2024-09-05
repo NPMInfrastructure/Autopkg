@@ -22,7 +22,9 @@
     <exclusions>
       <computers/>
       <computer_groups>
-        <name>Evernote Auto Update Exclusion</name>
+        <computer_group>
+          <name>Evernote Auto Update Exclusion</name>
+        </computer_group>
       </computer_groups>
       <users/>
       <buildings/>
