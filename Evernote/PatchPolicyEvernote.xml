@@ -21,7 +21,9 @@
     </limitations>
     <exclusions>
       <computers/>
-      <computer_groups>Evernote Auto Update Exclusion</computer_groups>
+      <computer_groups>
+        <name>Evernote Auto Update Exclusion</name>
+      </computer_groups>
       <users/>
       <buildings/>
       <departments/>
